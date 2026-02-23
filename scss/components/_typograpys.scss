@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Tagesschrift&display=swap');
+
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.heading {
+  color: $primary-color-white;
+  font-size: 35px;
+  font-family: "font1";
+  line-height: 120%;
+  @include multilineElipsis(2);
+}
+
+.heading-h1 {
+  color: $primary-color-white;
+  font-size: 20px;
+  font-family: "font1";
+  line-height: 120%;
+  @include multilineElipsis(5);
+
+
+}
+
+.larg-text {
+  font-size: 140px;
+  font-family: "rosindale";
+  line-height: 180%;
+  @include multilineElipsis(2);
+  color: $primary-color-white;
+  letter-spacing: 10px;
+
+  @include responsive("lg") {
+    font-size: 120px;
+    line-height: 120%;
+    @include multilineElipsis(3);
+  }
+    @include responsive("md") {
+    font-size: 90px;
+        line-height: 150%;
+
+  }
+   @include responsive("sm") {
+    font-size: 70px;
+      letter-spacing: 5px;
+
+  }
+   @include responsive("xs") {
+    font-size: 54px;
+   }
+}
+
+
+.heading-h2 {
+  color: $primary-color-black;
+  font-size: 28px;
+  font-family: "GeneralSans-medium";
+  line-height: 120%;
+  @include multilineElipsis(2);
+}
+
+.heading-h3 {
+  color: $primary-color-black;
+  font-size: 18px;
+  font-family: "GeneralSans-medium";
+  line-height: 120%;
+  @include multilineElipsis(2);
+}
+
+
+.link-default {
+  color: $primary-color-black;
+  font-size: 22px;
+  font-family: "font1";
+  line-height: 120%;
+  @include multilineElipsis(2);
+}
+
+.price {
+  color: $primary-color-black;
+  font-size: 24px;
+  font-family: "GeneralSans-medium";
+  line-height: 120%;
+  @include multilineElipsis(2);
+
+}
+
+.text {
+  color: $primary-color-black;
+  font-size: 14px;
+  font-family: "GeneralSans-medium";
+  line-height: 120%;
+  @include multilineElipsis(2);
+}
+
+.attribute {
+  color: $primary-color-black;
+  font-size: 15px;
+  font-family: "GeneralSans-medium";
+  line-height: 120%;
+  @include multilineElipsis(2);
+}
+
+.filters-title {
+  margin: 0 0 20px;
+  font-size: 1.4em;
+  color: #333;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 12px;
+  font-family: "GeneralSans-medium";
+
+}
+
+.gallery-title {
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 60px;
+  font-family: "rosindale";
+}
+.menu-context{
+color: $primary-color-black;
+  font-size: 40px;
+  font-family: "rosindale";
+  @include multilineElipsis(4);
+  color: rgb(0, 0, 0);
+padding: 60px;
+color: white;
+@include responsive("xxl") {
+   padding: 30px 50px ;
+
+  }
+  @include responsive("lg") {
+font-size: 40px;
+   padding: 20px 30px ;
+
+  @include multilineElipsis(7);
+
+  } @include responsive("md") {
+font-size:25px;
+padding: 20px 10px ;
+
+
+  }
+
+
+}
+.menu-subtext {
+  display: block;
+  font-size: 16px;
+  margin-top: 12px;
+  letter-spacing: 2px;
+  opacity: 0.85;
+    font-family: "rosindale";
+  @include multilineElipsis(4);
+  color: rgb(0, 0, 0);
+padding: 60px;
+color: white;
+@include responsive("xxl") {
+ margin-top:0 ;
+
+  }
+   @include responsive("xl") {
+   padding: 20px 30px ;}
+}

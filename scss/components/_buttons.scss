@@ -1,0 +1,233 @@
+.btn-primary {
+  background-color: $primary-color-white;
+  color: $primary-color-black;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px 20px;
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  border-radius: 4px;
+  width: 20%;
+  font-family: "font1";
+  line-height: 120%;
+  text-align: center;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+
+  @include multilineElipsis(2);
+
+  &:hover {
+    background-color: #C9B59C;
+    box-shadow:
+      0 12px 30px rgba(0, 0, 0, 0.25),
+      inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+
+
+  }
+
+  @include responsive("lg") {
+    width: 35%;
+  }
+
+  @include responsive("sm") {
+    width: 70%;
+
+  }
+
+  @include responsive("xs") {
+
+    width: 90%;
+  }
+
+
+}
+
+
+
+.btn-categories {
+  padding: 14px 22px;
+  font-family: "GeneralSans-medium";
+  font-size: 20px;
+  line-height: 120%;
+  color: #fff;
+  background-color: #030405;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  @include multilineElipsis(2);
+  flex: 1 1 calc(20% - 12px);
+
+
+
+  &:hover {
+    transition: 0.3s;
+    box-shadow: 0 18px 35px rgba(53, 41, 33, 0.55);
+    opacity: 0.8;
+  }
+
+  @include responsive("md") {
+    flex: 1 1 calc(25% - 12px);
+
+  }
+
+  @include responsive("sm") {
+
+    flex: 1 1 calc(33.333% - 12px);
+
+  }
+
+  @include responsive("xs") {
+
+    flex: 1 1 calc(50% - 12px);
+
+  }
+}
+
+
+
+
+.product-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 12px;
+  gap: 10px;
+}
+
+.product-btn .btn {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-family: "GeneralSans-light";
+
+}
+
+.product-btn .btn-details {
+  background-color: #5e3903;
+  color: white;
+}
+
+.product-btn .btn-details:hover {
+  background-color: #b38f59;
+}
+
+.product-btn .btn-add-cart {
+  background-color: #0c570c;
+  color: white;
+}
+
+.product-btn .btn-add-cart:hover {
+  background-color: #648f66;
+}
+
+.apply-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+  font-family: "GeneralSans-light";
+}
+
+.apply-btn:hover {
+  background: #17631b;
+}
+
+.apply-btn:active {
+  transform: scale(0.98);
+}
+
+.btn-reset {
+  width: 100%;
+  padding: 12px;
+  background: brown;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+  font-family: "GeneralSans-light";
+
+  &:hover {
+    background: rgb(77, 17, 17);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.filter-btns {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dec-inc {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.dec-inc:hover {
+  background: #e0e0e0;
+  border-color: #bbb;
+}
+
+.dec-inc:active {
+  transform: scale(0.95);
+}
+
+.remove-btn {
+  margin-top: 8px;
+  padding: 8px 16px;
+  background: #ff4444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+   @include responsive("lg") {
+     width: 100%;
+
+    }
+}
+
+.remove-btn:hover {
+  background: #cc0000;
+}
+
+.remove-btn:active {
+  transform: scale(0.97);
+}

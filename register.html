@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant - Sign Up</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="scss/main.css">
+  
+</head>
+
+<body>
+  <section class="signup-section">
+
+    <a href="index.html" class="back-home">
+      <i class="fa-solid fa-arrow-left"></i>
+      Back to Home
+    </a>
+
+    <div class="signup-container">
+      <div class="signup-header">
+        <h2>Create Account</h2>
+        <p>Join THAIGO and enjoy authentic Thai flavors</p>
+      </div>
+
+      <form class="signup-form" onsubmit="register(event)">
+        <div class="form-row">
+          <div class="field">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter first name" >
+          </div>
+
+          <div class="field">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Enter last name" >
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" >
+          </div>
+
+          <div class="field">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" placeholder="Enter your age" >
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Minimum 8 characters" >
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter phone number" >
+          </div>
+
+          <div class="field">
+            <label for="zipcode">Zipcode</label>
+            <input type="text" name="zipcode" id="zipcode" placeholder="Enter zipcode" >
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" placeholder="Enter your address" >
+        </div>
+
+        <div class="field">
+          <label for="avatar">Avatar URL (Optional)</label>
+          <input type="url" name="avatar" id="avatar" placeholder="https://example.com/avatar.jpg">
+        </div>
+
+        <div class="field">
+          <label>Gender</label>
+          <div class="gender-select">
+            <label>
+              <input type="radio" name="gender" value="MALE" >
+              Male
+            </label>
+            <label>
+              <input type="radio" name="gender" value="FEMALE">
+              Female
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="signup-btn">Create Account</button>
+    <p id="registerSms" ></p>
+
+      </form>
+
+      <div class="login-link">
+        Already have an account? <a href="login.html">Sign In</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script src="/js/auth.js"></script>
+ 
+
+
+
+</body>
+</html>

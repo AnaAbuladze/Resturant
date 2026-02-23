@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+
+<body>
+    <section class="hero">
+        <header class="hero__head p-h-48 p-v-24 flex item-center justify-between container">
+            <a class="restaurant-name heading" href="index.html">THAIGO</a>
+
+           <nav class="hero-nav desktop-nav">
+          <ul class="flex g-24">
+            <li class="link-default"><a href="index.html">Home</a></li>
+            <li class="link-default"><a href="menu.html">Menu</a></li>
+            <li class="link-default"><a href="cart.html">Cart</a></li>
+            <li class="link-default" id="userLinkDesktop">
+              <a href="login.html">Log In</a>
+            </li>
+            <li class="link-default" id="logoutLinkDesktop" style="display:none;">
+              <button onclick="logout()" style="border:none; background:none; cursor:pointer;color: white;">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </button>
+            </li>
+
+          </ul>
+
+          <span class="item-num">0</span>
+        </nav>
+
+            <button class="burger-menu" aria-label="Toggle menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </header>
+
+        <div class="mobile-menu">
+            <button class="close-menu" aria-label="Close menu">
+                <span class="close-line"></span>
+                <span class="close-line"></span>
+            </button>
+ <nav class="mobile-nav">
+          <ul>
+            <li class="link-default" id="userLinkMobile">
+              <a href="login.html">Log In</a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart <span class="item-num-mobile">0</span></a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li class="link-default" id="logoutLinkMobile" style="display:none;">
+              <button onclick="logout()" style="border:none; background:none; cursor:pointer;color: white;">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+        </div>
+
+
+        <div class="hero__content flex flex-col align-center g-48 p-h-12">
+            <div class="flex flex-col align-center ">
+                <h1 class="larg-text" data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-cubic"
+                    data-aos-delay="0">Authentic Thai Cuisine</h1>
+                <p class="heading-h1 p-l-72" data-aos="fade-up" data-aos-duration="1500"
+                    data-aos-easing="ease-out-cubic" data-aos-delay="0">Fresh ingredients, bold flavors, and traditional
+                    recipes straight from Thailand.</p>
+            </div>
+
+            <a href="menu.html" class="btn btn-primary ">View Menu</a>
+        </div>
+    </section>
+
+    <section class="seafood-gallery container p-h-48 p-v-48">
+        <h2 class="gallery-title" data-aos="fade-up" data-aos-duration="1000">AUTHENTIC THAI SOUPS</h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-row gallery-row-top">
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/gid-gallery1.jpg" alt="Seafood Chowder">
+                </div>
+
+                <div class="gallery-text" data-aos="fade-up" data-aos-delay="200">
+                    <p>Our signature Tom Yum is a harmonious blend of aromatic lemongrass, galangal, and kaffir lime
+                        leaves. Fresh herbs and authentic Thai spices create a perfect balance of hot, sour, and savory
+                        flavors that transport you straight to Bangkok.</p>
+                </div>
+
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+                    <img src="img/gid-gallery2.jpg" alt="Red Bowl Soup">
+                </div>
+            </div>
+
+            <div class="gallery-row gallery-row-bottom">
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/gid-gallery4.jpg" alt="Spicy Seafood Soup">
+                </div>
+
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/gid-gallery3.jpg" alt="Seafood Bowl">
+                </div>
+
+                <div class="gallery-text" data-aos="fade-up" data-aos-delay="300">
+                    <h3>FULL MENU</h3>
+                    <p>Experience the vibrant flavors of Thailand with our extensive menu. From classic Pad Thai to
+                        fragrant curries and refreshing papaya salad, each dish is prepared with traditional recipes and
+                        the freshest ingredients to bring authentic Thai cuisine to your table.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="orderText" data-aos="fade-up" data-aos-delay="300">
+        <h3>ORDER ONLINE NOW</h3>
+        <p>Browse our full menu and get authentic Thai food delivered to your door. Fresh ingredients, traditional
+            recipes, made to order.</p>
+        <a href="menu.html" class="btn-order">Order Now</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-content">
+
+                <div class="footer-column">
+                    <h3>Online Restaurant</h3>
+                    <p>Bringing authentic Thai flavors to your table. Fresh ingredients, traditional recipes, and a
+                        passion for great food.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li> 123 Thai Street, City</li>
+                        <li> +1 (555) 123-4567</li>
+                        <li> info@thairestaurant.com</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Online Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+ <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="/js/mobile-header.js"></script>
+     <script src="js/update.js"></script>
+     <script src="js/rest.js"></script>
+<script src="js/login.js"></script>
+<script src="js/addToCart.js"></script>
+
+</body>
+
+</html>
